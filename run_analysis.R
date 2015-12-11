@@ -63,5 +63,5 @@ dataTable<- tbl_df(arrange(dataAggr,subject,activityName))
 head(str(dataTable),2)
 
 ## 5. create a second independent tidy data set with the average of each variable for each activity and each subject
-write.table(dataTable, "TidyData.txt", row.name=FALSE)
+write.table(dataTable, "TidyData.txt", sep = "\t", row.name=FALSE)
 
